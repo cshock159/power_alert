@@ -1,0 +1,9 @@
+[Unit]
+Description=Pings Washer/Dryer to determine if power is offline in Laundry room.
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/laundry_power.py
+User=cory
+
+[Install]
+WantedBy=multi-user.target
